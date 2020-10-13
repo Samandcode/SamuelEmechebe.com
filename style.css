@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+}
+
+ul {
+  list-style-type: none; 
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2em;
+}
+
+h1 {
+  display: inline;
+}
+
+h3 {
+  font-family: inherit;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+h3 span {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+
+div {
+  display: block;
+}
+
+section {
+  display: block;
+}
+
+.fullscreen {
+  background: url('http://res.cloudinary.com/bgongre/image/upload/v1525360275/deskdark_x27h50.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.fullscreen header {
+  padding-top: 60px;
+  width: 100%;
+}
+
+.scrolling-nav li {
+  margin: 5px;
+  border: 2px solid transparent;
+  transition: border .5s;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.scrolling-nav li a {
+  color: #FFF;
+  padding: 10px;
+}
+
+.scrolling-nav li.active {
+  border-color: #FFF;
+}
+
+.scrolling-nav li:active, .scrolling-nav li:hover, .active {
+  border-color: #FFF;
+}
+
+.name-box {
+  padding-top: 30vh;
+}
+
+.name {
+  display: inline-block;
+  border: 3px solid #FFF;
+  color: #FFF;
+  font-size: 80px;
+}
+
+.introduction {
+  padding-bottom: 180px !important;
+}
+
+.about-title {
+  margin: 0 auto 60px;
+}
+
+.below-fullscreen {
+  position: absolute;
+  top: 100%;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  text-align: center;
+  color: #2c3e51;
+  width: 100%;
+}
+
+.below-fullscreen section {
+  padding: 100px 20px 100px;
+}
+
+.below-fullscreen .paragraphs a {
+  font-size: 1em;
+}
+
+.below-fullscreen section ul.paragraphs li, .below-fullscreen section ul.skills li {
+  margin: 0 30px;
+}
+
+.below-fullscreen section ul.paragraphs li+li, .below-fullscreen section ul.skills li+li {
+  margin-top: 50px;
+}
+
+.below-fullscreen section ul.paragraphs li>p, .below-fullscreen section ul.skills li>p {
+  line-height: 34px;
+  margin: 0 auto;
+}
+
+.below-fullscreen section ul.paragraphs li>p span, .below-fullscreen section ul.skills li>p span {
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.below-fullscreen section ul.paragraphs li>p span:first-child, .below-fullscreen section ul.skills li>p span:first-child {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+.below-fullscreen section ul.paragraphs li>p span:last-child, .below-fullscreen section ul.skills li>p span:last-child {
+  font-size: 22px;
+}
+
+.below-fullscreen .code-img {
+  width: 100%;
+  height: 100vh;
+}
+
+.below-fullscreen section.inverted {
+  background-color: #182a3d;
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-title {
+  margin: 0 auto 80px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+.below-fullscreen section .row+.row {
+  margin-top: 40px;
+}
+
+.below-fullscreen section .row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.below-fullscreen section .row .project {
+  padding-right: 10px;
+  width: 40%;
+}
+
+.below-fullscreen section .row .project img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 100%;
+  height: auto;
+}
+
+.below-fullscreen .paragraphs a, .below-fullscreen section .project a, .below-fullscreen section .more-portfolio a {
+  color: #e74a64;
+}
+
+.below-fullscreen section .row .project footer span:first-child {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 15px;
+  line-height: 60px;
+}
+
+.below-fullscreen section .row .project footer {
+  position: relative;
+  top: -10px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  height: 60px;
+  width: 100%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #FFF;
+  text-align: left;
+}
+
+.below-fullscreen section .more-portfolio {
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 60px 0 0;
+}
+
+.below-fullscreen section .more-portfolio a {
+  font-size: 1.1em;
+}
+
+.scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #e74a64;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.below-fullscreen>footer {
+  background-color: #182a3d;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 70px 0 90px;
+}
+
+.github-link {
+  color: #e74a64 !important;
+}
+
+.below-fullscreen footer a {
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.below-fullscreen footer li {
+  padding: .5em;
+}
+
+.below-fullscreen>footer hr {
+  width: 100px;
+  margin: 50px auto;
+}
+
+.below-fullscreen footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  ul {margin: 0;}
+  .name {font-size: 50px;}
+  .name-box {padding-top:15vh;}
+  .introduction {padding: 60px 20px 50px !important;}
+  .below-fullscreen section ul.paragraphs li>p {padding-bottom: 10px;}
+  .skills-title {margin: 0 !important;}
+  .skills {padding: 60px 20px 50px !important;}
+  .inverted {padding-bottom: 100px !important}
+  .projects {width: 100% !important;}
+  .below-fullscreen section .row .project {width: 350px !important; padding: 0;}
+  .below-fullscreen section .row+.row {margin-top: 15px !important;}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  ul {margin: 0;}
+  .name {font-size: 50px;}
+  .name-box {padding-top:15vh;}
+  .introduction {padding: 60px 20px 50px !important;}
+  .below-fullscreen section ul.paragraphs li>p {padding-bottom: 10px;}
+  .skills-title {margin-bottom: 5% !important;}
+  .skills {padding: 60px 20px 50px !important;}
+  .inverted {padding-bottom: 100px !important}
+  .projects {width: 100% !important;}
+  .below-fullscreen section .row .project {width: 350px !important; padding: 0;}
+  .below-fullscreen section .row+.row {margin-top: 15px !important;}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  ul {margin: 0;}
+  .introduction {padding: 100px 20px 100px !important; margin: 0 10%;}
+  ul.skills {padding: 0 !important;}
+  .skills {padding: 100px 20px 100px !important; margin: 0 10%;}
+  .skills-title {padding-bottom: 50px !important;}
+  .projects {width: 100% !important;}
+  .below-fullscreen section .row .project {padding-left: 0 !important;}
+  .below-fullscreen section .row+.row {margin-top: 10px !important;}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  ul {margin: 0;}
+  .introduction {padding: 100px 20px 100px !important; margin: 0 20%;}
+  .skills {padding: 100px 20px 100px !important; margin: 0;}
+  .skills-title {margin: 0;}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  ul {margin: 0;}
+  .introduction {padding: 100px 20px 100px !important; margin: 0 30%;}
+  .skills {margin: 0 10%;}
+  .skills-title {margin: 60px;}
+}
