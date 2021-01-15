@@ -48,7 +48,7 @@ section {
 }
 
 .fullscreen {
-  background: url('http://res.cloudinary.com/bgongre/image/upload/v1525360275/deskdark_x27h50.jpg');
+  background: url('images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,6 +110,12 @@ section {
   text-align: center;
   color: #2c3e51;
   width: 100%;
+}
+
+.send-button {
+  color: #182a3d;
+  margin-top: 5%;
+  font-weight: 100px;
 }
 
 .below-fullscreen section {

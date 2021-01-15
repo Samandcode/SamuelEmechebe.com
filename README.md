@@ -1,2 +1,2 @@
 # SamuelEmechebe.com
-Welcome to my Professional Portfolio Detailing my skill and abilities
+# This is a site detailing my skill and abilities
